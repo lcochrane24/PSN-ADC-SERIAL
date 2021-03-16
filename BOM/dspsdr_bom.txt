@@ -1,0 +1,61 @@
+                                       BOM For 16-Bit ADC Board    
+
+Qt    Designator                 Description                Information DK = www.digikey.com  JM = www.jameco.com
+
+1     C1 or C2                   220UF / 50V capcitor                Only add C1 or C2 not both. JM 11019
+3     C3, C4, C5                 100uf 50v capacitor                 DK P10323-ND or equivalent
+10    C10, C11, C12, C20, C21,   .1uf mono capacitor                 DK 399-4265-ND or equivalent
+      C25, C31, C32, C33, C45           "                                        "
+4     C22, C23, C26, C30         68UF / 35V capcacitor               DK P10292-ND or equivalent
+1     C24                        1UF / 25V tant capacitor            JM 545588 or equivalent
+2     C27, C28                   27PF SM capacitor                   DK 338-1085-ND - SEE NOTE 1 BELOW
+2     C34 C35                    2.2uf 16v tant capacitor            DK 399-3536-ND or equivalent
+
+3     R1, R2, R3                 1k 1/4w 1% resistor		     DK 1.00KXBK-ND or equivalent
+2     R5, R10                    1.0M 1/4w 1% resistor               DK 1.00MXBK-ND or equivalent
+1     R6                         200 ohm 1/4w 1% resistor            DK 200XBK-ND or equivalent
+2     R7, R8			 5.1K 1/4w 1% resistor               DK 5.11KXBK-ND or equivalent
+1     R9                         33.2K 1/4w 1% resistor              DK 33.2KXBK-ND or equivalent
+
+1     RP1                        10k 5 resistor6 pin SIP             DK 770-61-R10KP-ND
+1     RP2                        100k 8 resistor DIP16               DK 4116R-1-104LF-ND
+
+2     R11, R12                   50K 20 turn trimpot                 JM 853791 or DK SP064W-50K-ND
+
+4     D1, D2, D3, D4, D5         1N5819 diode                        JM 177965 or DK 497-6610-1-ND
+
+3     L1, L2, L3                 220uh 430ma power coil              DK 811-1300-ND
+3     L4, L5, L6                 6.8uh filter inductor               DK DN7691-ND You can also use 4.7uh DN7689
+
+1     Y1                         8.0Mhz HC49S crystal                DK X1094-ND
+
+1     J1                         Power Connector                     JM 137673
+1     J2                         DB9 male connector                  JM 104943
+1     J3                         DB9 female connecor                 JM 104952
+
+-------- ADC Board with 26 pin header
+1     J4			 26-Pin Header Connector             JM 68372
+-------- ADC Board with DB 25 connector
+1     J4	  	         DB25 Female Connector               JM 15182 
+
+1     U1, U2                     LM2574-12V DIP8 12v regulator       DK LM2574N-12G or equivalent 
+1     U3                         LM2574-5V DIP8 5v regulator         DK LM2574N-5G or equivalent
+1     U4                         DS14C89 or DS1489 DIP14 line recvr  DK DS14C89ATN, SN75C189AN or equivalent
+1     U5                         DS14C88 or DS1488 DIP16 line driver DK DS14C88TN, SN75C188N or equivalent
+1     U6                         dsPic30F3014 DIP40 Microcontroller  DK DSPIC30F3014-30I/P
+1     U7                         DG508 or DG408 DIP16 8-ch multiplxr DK DG508BEJ-E3 or DG408DJZ
+1     U8                         LT1605 16-Bit ADC chip              DK LTC1605CSW#PBF-ND or LTC1605ISW#PBF-ND
+1     U9                         LF411 DIP8 Op-Amp                   DK 296-26079-5-ND or equivalent
+
+1     LD1                        Power LED                           JM 104248 or equivalent
+
+1     SW1                        4 Position DIP Switch               JM 38820 or equivalent
+
+1     JP1, JP5		         2 pin .1 inch jumper                JM 108338 Shorting Block JM 19141
+
+1     S1			 40-Pin socket for dsPIC U6          JM 112311 or equivalent
+2     S2, S3                     16-Pin socket for mux U7 and RP2    JM 112222 or equivalent
+
+Note 1: On the schematic C27 and C28 are fixed capacitors. C27 can be replaced with a 9-50pf ceramic trimmer 
+        capacitor Jameco PN 136979. This will allow you to adjust the crystal oscillator to 8.0MHZ +- 10 Hz.
+-- end
