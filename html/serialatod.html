@@ -1,0 +1,415 @@
+<html><head><title>PSN-ADC-SERIAL - PSN-ADC-USB Board</title></head>
+<body BACKGROUND="backgnd.jpg">
+<center><h2>PSN-ADC-SERIAL and PSN-ADC-USB Version III</h2>
+<h2>True 16-Bit Analog to Digital Converter Board</h2>
+<b>Last Updated: 3/15/2021</b>
+<p><span style="background-color: #FFFF00">New!</span> Schematic, parts list,
+gerber files and source code for this board is available on GitHub <a href="https://github.com/lcochrane24/PSN-ADC-SERIAL">here</a>.</p>
+<p align="center">Software: <a href="winsdr/winsdr4x.html">WinSDR Version
+4.7.x</a>&nbsp; <a href="PSNADBoardDLL.html">Linux Driver Library and Windows DLL</a></p>
+<p align="center"> <a href="datalogger/index.html">Enclosures for the PSN-ADC-SERIAL
+/ PSN-ADC-USB Board</a></p>
+<p align="center"><a href="#NewFirmware">Firmware Upgrade Information for the
+Garmin GPSx 18 LVC Receiver</a>&nbsp;</p>
+<p align="center"><a href="http://www.ftdichip.com/Drivers/VCP.htm">FTDI Driver
+for PSN-ADC-USB Board</a></p>
+</center>
+<hr>
+<p align="center">PSN-ADC-SERIAL Version III Board with 26 Pin Ribbon Connector Header
+and DB25 Pin Connector</p>
+<p align="center"><a href="SerialADCV3_26.jpg"><img border="0" src="SerialADCV3_26.jpg" alt="Picture of the board" width="300" height="307"></a>
+<a href="SerialADCV3_db25.jpg"><img border="0" src="SerialADCV3_db25.jpg" alt="Picture of the board" width="300" height="307"></a></p>
+<p align="center">PSN-ADC-USB Version III Board with 26 Pin Header or DB25 Connector</p>
+<p align="center"><a href="atodusb.jpg"><img border="0" src="atodusbsm.jpg" width="300" height="301"></a></p>
+<p align="center">Click on image for larger view</p>
+<h2 align="left">Features:</h2>
+<ul>
+<li>Low Cost Analog to Digital Card for Seismic and Other Low Frequency Data
+  Recording</li>
+<li>True 16-Bit Resolution with Oversampling <font size="2">(<a href="#16-Bit Performance">more
+  information</a>)</font></li>
+<li>Standalone ADC Board with RS-232 Serial Output&nbsp;or USB Interface</li>
+<li>8 Single-Ended Analog Input Channels <font size="2"> (Note 1)</font></li>
+<li>Compatible with <a href="winsdr/"> WinSDR</a>  Datalogging Software</li>
+<li>Time Accuracy &lt; 3 Millisecond with GPS Timing System&nbsp;</li>
+<li>Low power Requirement: &lt; 1 Watt without Timing Reference;&nbsp; &lt; 1.5
+  Watts with GPS Timing</li>
+<li>Uses <a href="http://www.microchip.com/">Microchip's</a> Low Power High Speed
+  dsPIC30F3014 Microprocessor</li>
+<li>Replaces <a href="serialatod_v1.html">PSN-ADC-SERIAL Version I</a> and <a href="serialatod_v2.html">PSN-ADC-SERIAL
+  Version II</a> Boards</li>
+</ul>
+<hr>
+<h2>Specifications:</h2>
+<ul>
+<li><b>Analog Inputs:</b>
+<ul>
+<li>Channels: 8 Single-Ended Inputs <font size="2"> (Note 1)</font>
+<li>Resolution: 16-Bit Successive Approximation
+<li>Accuracy: 16 Bits</li>
+<li>Dynamic Range: 96 db</li>
+<li>Input Range: +- 5 or +-10 Volts,&nbsp; Jumper Selectable</li>
+<li>A/D Converter Chip: Linear Technology LTC1605CN</li>
+<li>Input Impedance: 4.7k or 100k <font size="2"> (Note 2)</font></li>
+</ul>
+<li><b>Sample Rates:</b></li>
+<ul>
+<li> 500, 250, 200, 100, 50, 20 and 10 Samples Per Second <font size="2"> (Note 1)</font></li>  
+</ul>
+<li><b>GPS Support:</b>
+  <ul>
+    <li>Supports these GPS Receivers: <a href="gps/gps18.html">Garmin
+      GPS 16 / 18 Sensor</a>&nbsp;or the <a href="gps/index.html">Motorola ONCORE</a>
+      series of GPS receivers</li>
+    <li>+- 3 Millisecond Time Accuracy when Receiver is Locked to GPS Time</li>
+  </ul>
+</li> 
+<li><b>Board Size:</b>
+  <ul>
+    <li>6.500 x 5.750 Inches or 16.5 x 14.6 Centimeters.&nbsp;</li>
+  </ul>
+</li> 
+<li><b>Power Supply Requirements:</b>
+  <ul>
+    <li>15 to 28 VDC at ~100 MA</li>
+  </ul>
+</li>
+</ul>
+<blockquote>
+<p><b>Notes:</b>
+</p>
+<ol>
+<li>At 500 SPS the board can record up to 4 channels&nbsp;</li>   
+<li>Other input impedance possible by changing one resistor pack</li>   
+</ol>
+</blockquote>
+<hr>
+<h2>Cost:</h2>
+<ul>
+  <li>PSN-ADC-SERIAL Version III Board Without Power Supply - <b>$170.00</b></li>
+  <li>PSN-ADC-USB Version III Board Without Power Supply - <b>$180.00</b></li>
+  <li><a href="gps/gps18.html">Garmin GPS 18 Timing System</a> - <b>$85.00</b></li>
+  <li>Power Supply Options:
+    <ul>
+      <li><a href="ps110.jpg">110 VAC 60 Hz Wall Mounted Power Supply</a> - <b>$10.00</b></li>
+      <li><a href="ps110-220.jpg">Universal 110 VAC to 220 VAC 50 / 60 Hz Power
+        Supply</a> with one Adapter Plug - <b>$25.00</b></li>
+    </ul>
+  </li>
+  <li>6 Foot (1.83m) 9-Pin Male / Female RS-232 Cable - <b>$6.00</b></li>
+  <li>50 Foot (15.24m) 9-Pin Male / Female RS-232 Cable - <b>$20.00</b></li>
+  <li><a href="datalogger/index.html">Enclosures</a> for the PSN-ADC-SERIAL
+    Board / PSN-ADC-USB</li>
+</ul>
+<blockquote>
+<p>The PSN-ADC-SERIAL or PSN-ADC-USB boards with DB25 Connector come with one DB-25 male connector and connector hood.</p>
+<p>To order a board please contact me at the email address.
+</blockquote>
+<hr>
+<h2>True <a name="16-Bit Performance">16-Bit Performance</a>:</h2>
+<blockquote>
+  <p>The Analog to Digital converter chip on the
+  PSN-ADC-SERIAL / PSN-ADC-USB board has an internal noise level of +- 3 counts. With the use
+  of oversampling, the internal noise level of the chip can be averaged out to
+  produce a true 16-Bit (96db) dynamic range. The amount of oversampling depends
+  on the sample rate. See table below:</p>
+  <div align="left">
+    <table border="6" width="362" height="11">
+      <tr>
+        <td width="109" height="40">
+          <p align="center">SPS</td>
+        <td width="227" height="40">
+          <p align="center">Average #</td>
+        <td width="182" height="40">
+          <p align="center">SPS</td>
+        <td width="178" height="40">
+          <p align="center">Average #</td>
+      </tr>
+      <tr>
+        <td width="109" height="38">
+          <p align="center">10</td>
+        <td width="227" height="38">
+          <p align="center">800</td>
+        <td width="182" height="38">
+          <p align="center">200</td>
+        <td width="178" height="38">
+          <p align="center">40</td>
+      </tr>
+      <tr>
+        <td width="109" height="38">
+          <p align="center">20</td>
+        <td width="227" height="38">
+          <p align="center">400</td>
+        <td width="182" height="38">
+          <p align="center">250</td>
+        <td width="178" height="38">
+          <p align="center">16</td>
+      </tr>
+      <tr>
+        <td width="109" height="38">
+          <p align="center">50</td>
+        <td width="227" height="38">
+          <p align="center">200</td>
+        <td width="182" height="38">
+          <p align="center">500</td>
+        <td width="178" height="38">
+          <p align="center">16</td>
+      </tr>
+      <tr>
+        <td width="109" height="38">
+          <p align="center">100</td>
+        <td width="227" height="38">
+          <p align="center">80</td>
+        <td width="182" height="38">
+          <p align="center">&nbsp;</td>
+        <td width="178" height="38">
+          <p align="center">&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+</blockquote>
+<hr>
+<h2>Board Differences:&nbsp;</h2>
+<blockquote>
+  <p>There are two versions of the PSN-ADC-SERIAL and PSN-ADC-USB boards. The boards are identical except
+  for the Analog Input connector and location on the board. The board with the
+  DB25 right angle connector is for customers who only need the ADC board. This
+  version allows access to all of the connectors at the edge of the board.&nbsp;The board with the 26 pin ribbon connector header can be used with the <a href="serialamp.html">PSN-ADC-EQAMP</a>
+  Amplifier / Filter board with mating 26 pin header connector. This arrangement
+  produces a <a href="module.jpg">module</a> that can be mounted in a
+  off-the-self box or this custom made <a href="datalogger/index.html">metal
+  enclosure</a>.</p>
+  <p>The difference between the PSN-ADC-SERIAL and PSN-ADC-USB boards is the
+  interface between host computer and the ADC board. The PSN-ADC-SERIAL board
+  uses a RS-232 interface and the PSN-ADC-USB use a USB interface to the host
+  computer. With the <a href="http://www.ftdichip.com/Drivers/VCP.htm">Virtual
+  COM Port driver from FDTI</a> the PSN-ADC-USB board emulates a standard RS-232
+  COM Port so datalogger programs like WinSDR see a common interface.&nbsp;</p>
+</blockquote>
+<hr>
+<h2>Software:</h2>
+<blockquote>
+  <p><a href="winsdr/index.html">WinSDR</a> (<a href="winsdr/winsdr4x.html">Download</a>) can be used to record data using the
+  PSN-ADC-SERIAL / PSN-ADC-USB Version III ADC board.&nbsp; This program is included with the purchase of the
+  board.</p>
+  <p>This <a href="PSNADBoardDLL.html">Windows DLL Driver and Linux Library</a> ( <a href="PSNADBoardDLL.pdf">pdf
+  version </a>) can be used by programmers who would like to write their
+  own datalogger program or add the A/D board to an existing program.&nbsp; The <a href="/software/PSNAdBoardV52_Win.zip">DLL
+  Driver zip file</a> or <a href="/software/PSNAdBoardV52_Lin.zip">Linux Library</a>
+  includes an example, written in VC++ 8.0, showing how to use the
+  PSNADBoard.DLL file.</p>
+  <p><a href="http://folkworm.ceri.memphis.edu/ew-doc/">Earthworm</a>, a
+  powerful seismic software package that can run under various operating
+  systems, can now receive data using the PSN-ADC-SERIAL / PSN-ADC-USB board or WinSDR. See
+  this <a href="software.html#Earthworm">link</a> for more information.&nbsp;</p>
+</blockquote>
+<hr>
+<h2><a name="NewFirmware">Firmware Upgrade Information</a>:</h2>
+<blockquote>
+  <p>Garmin is now shipping a new version of their OEM GPS 18 LVC receiver. The
+  new receiver, the GPSx 18 LVC, has better sensitivity then the older model.
+  The new receiver required a minor change to the PSN-ADC-SERIAL firmware to
+  operate properly. Version III ADC board users should use <a href="/software/dsdr12.zip">firmware
+  version 1.2</a>. Version II ADC board users should use <a href="/software/psdr28.zip">firmware
+  version 2.8</a>. To upgrade the firmware, download the appropriate zip file,
+  unzip, copy the .hex file to your WinSDR install directory and then follow <a href="/winsdr/upgrade.html">these
+  directions</a>.&nbsp;Version III ADC boards started shipping with firmware
+  version 1.2 December 8 2008.&nbsp;</p>
+</blockquote>
+<hr>
+<h2>Input/Output Connector Information:</h2>
+<blockquote>
+  <h4>Power Supply Connector J1 and Power Requirements:</h4>
+  <blockquote>
+    <p>The power connector on the board is a standard 2.1mm X 5.5mm male jack. <b>Positive
+    voltage must be applied to the center pin</b>. A diode on the board will
+    prevent damage if the power is reversed.</p>
+    <p>The DC input range
+    is 15 volts to 28 volts.&nbsp; At 15 VDC the
+    board draws ~70 ma, at 24VDC ~48 ma. With a Garmin GPS 18 Sensor connected
+    to the board, the current draw is 100 ma at 15 VDC and 65 ma at 24 VDC.</p>
+    <p><b>Note: </b>If the user supplies their own power supply the voltage
+    across the large capacitor C2 should be checked to verify there is enough voltage
+    for proper operation. The voltage should be between 14.6 and&nbsp; 28 VDC,
+    with ~18 VDC being optimum. If the voltage is too low, the onboard DC regulators
+    will not operate properly. If the voltage is too high, you will exceed the
+    maximum voltage level of the parts on the A/D board.</p>
+  </blockquote>
+  <h4>GPS Comm Connector J2:</h4>
+  <blockquote>
+    <p>This connector is a 9 pin, DB-9 male connector used to communicate to a
+    GPS receiver. A straight through serial cable should be used between the A/D
+    board and the GPS's receiver interface board. See <a href="/gps/index.html">/gps/index.html</a>
+    for a GPS timing system compatible with the PSN-ADC-SERIAL / PSN-ADC-USB board. The
+    connector has the following pinout:</p>
+    <ul>
+      <li>Pin 1 - CD (Carrier Detect) Input, Used for the 1 PPS signal from the
+        GPS receiver</li>
+      <li>Pin 2 - Receiver Data Input from the GPS Receiver</li>
+      <li>Pin 3 - Transmit Data Output to the GPS Receiver</li>
+      <li>Pin 4 - +5 VDC for Garmin GPS 16/18 Power</li>
+      <li>Pin 5 - Ground</li>
+      <li>Pin 7 - Ground for Garmin GPS 16</li>
+      <li>Pins 6, 8 and 9 - Not Connected</li>
+    </ul>
+  </blockquote>
+  <h4>PSN-ADC-SERIAL Comm Connector J3:</h4>
+  <blockquote>
+    <p>This connector is a 9 pin DB-9 female connector used to communicate to
+    the PC running WinSDR. A straight through serial cable should be used
+    between the A/D board and the your computer. The connector has the following
+    pinout:</p>
+    <ul>
+      <li>Pin 1 - Not Connected</li>
+      <li>Pin 2 - Transmit Data Output</li>
+      <li>Pin 3 - Receive Data Input</li>
+      <li>Pin 4 - DTR (Data Terminal Ready) Input - CPU Reset Line</li>
+      <li>Pin 5 - Ground</li>
+      <li>Pin 6 - Not Connected</li>
+      <li>Pin 7 - Not Connected</li>
+      <li>Pin 8 - Not Connected</li>
+      <li>Pin 9 - Not Connected</li>
+    </ul>
+    <p>The DTR line ( Pin 4 ) is used to reset the CPU on the A/D board. This
+    line should be below 2 VDC for normal operation. If the LED on the board
+    does not come on, it may be do to this line holding the CPU in the reset
+    state. Position 1 of Switch SW1 can be used to disable this feature. If
+    disabled, off position, the host computer can not reset the CPU on the A/D
+    board.&nbsp;&nbsp;</p>
+  </blockquote>
+  <h4>PSN-ADC-USB Interface J3:</h4>
+  <blockquote>
+    <p>This USB Type B connector is used to communicate with the PC. The USB
+    interface chip used on the A/D board is a <a href="http://www.ftdichip.com/">FTDI</a>
+    FT232RL. Windows or Linux drivers (32-Bit or 64-Bit) can be downloaded from <a href="http://www.ftdichip.com/Drivers/VCP.htm">here</a>.&nbsp;</p>
+  </blockquote>
+  <h4>Analog Input / Power Output Connector J4:</h4>
+  <blockquote>
+    <p>The 25 pin DB-25 female connector has the following pinout:</p>
+    <ul>
+      <li>Pin 1 - Analog Input Channel 1</li>
+      <li>Pin 2 - Analog Input Channel 2</li>
+      <li>Pin 3 - Analog Input Channel 3</li>
+      <li>Pin 4 - Analog Input Channel 4</li>
+      <li>Pin 5 - Analog Input Channel 5</li>
+      <li>Pin 6 - Analog Input Channel 6</li>
+      <li>Pin 7 - Analog Input Channel 7</li>
+      <li>Pin 8 - Analog Input Channel 8</li>
+      <li>Pin 9 - Analog Ground</li>
+      <li>Pins 10 and 11 - +12 VDC Output Power. 75 MA Max.</li>
+      <li>Pin 12 - Not Connected</li>
+      <li>Pin 13 - Power Ground</li>
+      <li>Pins 14, 15, 16, 17, 18, 19, 20 and 21 Analog Grounds for Channels 1
+        to 8</li>
+      <li>Pin 22 - Not Connected</li>
+      <li>Pins 23 and 24 - -12 VDC Output Power. 75 MA Max.</li>
+      <li>Pin 25 - Power Ground</li>
+    </ul>
+    <p>The 26 pin .1 inch dual row header has the following pinout:</p>
+    <ul>
+      <li>Pin 1 - Analog Input Channel 1</li>
+      <li>Pin 3 - Analog Input Channel 2</li>
+      <li>Pin 5 - Analog Input Channel 3</li>
+      <li>Pin 7 - Analog Input Channel 4</li>
+      <li>Pin 9 - Analog Input Channel 5</li>
+      <li>Pin 11 - Analog Input Channel 6</li>
+      <li>Pin 13 - Analog Input Channel 7</li>
+      <li>Pin 15 - Analog Input Channel 8</li>
+      <li>Pins 2, 4, 6, 8, 10, 12, 14 and 16 Analog Ground for Channels 1 to 8</li>
+      <li>Pins 19 and 21 - +12 VDC Output Power. 100 MA Max.</li>
+      <li>Pins 20 and 22 - -12 VDC Output Power. 100 MA Max.</li>
+      <li>Pins 17, 18, 23, 24, 25, 26 Power Ground</li>
+    </ul>
+  </blockquote>
+</blockquote>
+<hr>
+<h2><a name="Jumpers"></a>Jumpers and Switches:</h2>
+<blockquote>
+  <h4>Jumper JP1:</h4>
+  <blockquote>
+    <p>This jumper controls the input voltage range of the A/D converter. When
+    the jumper is in, the input voltage range is +- 10 volts. With the jumper
+    removed, the input range is +- 5 volts. The jumper controls all 8 analog
+    input channels.</p>
+  </blockquote>
+  <h4>Switch SW1:</h4>
+  <blockquote>
+    <p>Switches 1 and 2 Control the
+    Baud Rate. See Table Below. (Default = 38.4K)<p>Switch 3 On - Version II
+    Emulation Mode - See Note Below<br>
+    Switch 3 Off - Normal Mode&nbsp;
+    <p>Switch 4 On - Allows the CPU on the ADC board to be reset by the host
+    computer using J3 DTR pin 4 (Default)<br>
+    Switch 4 Off - Host computer can not reset ADC CPU.<p>&nbsp;
+    <blockquote>
+      <blockquote>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Baud Rate Table
+      <table border="1" width="233" height="51">
+        <tr>
+          <td width="117" height="51" align="center">
+            <p align="center">SW1</td>
+          <td width="116" height="51" align="center">SW2</td>
+          <td width="116" height="51" align="center">
+            <p align="center">Rate</td>
+        </tr>
+        <tr>
+          <td width="117" height="51" align="center">
+            <p align="center">Off</td>
+          <td width="116" height="51" align="center">Off</td>
+          <td width="116" height="51" align="center">9600</td>
+        </tr>
+        <tr>
+          <td width="117" height="51" align="center">
+            <p align="center">On</td>
+          <td width="116" height="51" align="center">Off</td>
+          <td width="116" height="51" align="center">19200</td>
+        </tr>
+        <tr>
+          <td width="117" height="51" align="center">
+            <p align="center">Off</td>
+          <td width="116" height="51" align="center">On</td>
+          <td width="116" height="51" align="center">38400</td>
+        </tr>
+        <tr>
+          <td width="117" height="51" align="center">
+            <p align="center">On</td>
+          <td width="116" height="51" align="center">On</td>
+          <td width="116" height="51" align="center">57600</td>
+        </tr>
+      </table>
+	</blockquote>
+	</blockquote>	
+  </blockquote>
+  <h4>Emulation Mode:</h4>
+  <blockquote>
+    <p>SW1 Switch 3 controls the output format of the ADC board. When enabled, <b> Switch 3
+    On</b>, the output format will resemble the Version II ADC board. This mode will allow software written for
+    the older board to operate without modification. Users should use WinSDR version
+    4.1.5 or above with<b> Switch 3 Off</b> so WinSDR will know that you are using the new Version III board.</p>
+  </blockquote>
+</blockquote>
+<hr>
+<h2>Additional Information:</h2>
+<ul>
+<li><a href="serialamp.html">One to Four Channel Amplifier / Filter Board</a>
+  for the 16-Bit A/D Board</li>
+<li><a href="gps/gps18.html">GPS Timing System</a> for the PSN-ADC-SERIAL /
+  PSN-ADC-USB Board
+  <li><a href="datalogger/index.html">Enclosures</a> for the PSN-ADC-SERIAL /
+    PSN-ADC-USB Board&nbsp;</li>
+<li>Data Sheet for the Analog To Digital Convert Chip used on the PSN-ADC-SERIAL
+  / PSN-ADC-USB Board:
+<ul>
+<li><a href="http://www.linear.com/product/LTC1605">Linear Technology LTC1605 16 Bit A/D Chip&nbsp;</a></li>
+</ul>
+</ul>
+<hr>
+<p align="center">This page viewed <img src="/cgi-bin/pagecounter?serialatodv3.html" alt="Counter Image"> times since
+June 25, 2008</p>
+<hr>
+<center>[ <a HREF="index.html#Equipment">Equipment</a> ] 
+[ <a HREF="index.html">Home</a> ] 
+[ <a HREF="HowToOrder.html">How to Order</a> ]
+<p><a HREF="http://www.seismicnet.com/contact.html">
+ Contact Information</a>
+</center></body></html>
