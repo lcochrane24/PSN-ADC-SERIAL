@@ -7,6 +7,8 @@ BOM - The file dspsdr_bom.txt is the bill of materials (parts list) for the boar
 
 gerber - Gerber files to make the PCB. The board is 2 layers.
 
+html - My html and image files related to this board 
+
 schematic - Schematics of the board.
 
 src - Firmware source code files.
