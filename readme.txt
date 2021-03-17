@@ -15,6 +15,8 @@ schematic - Schematics of the board.
 
 src - Firmware source code files.
 
+build_info.txt - Notes on how to build, test and calibrate the PSN-ADC-SERIAL board.
+
 Please do not contact me directly regarding building this board. For support please use the PSNList Google group at https://groups.google.com/g/psnlist.
 
 Thanks,
