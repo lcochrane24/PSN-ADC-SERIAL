@@ -7,13 +7,15 @@ BOM - The file dspsdr_bom.txt is the bill of materials (parts list) for the boar
 
 gerber - Gerber files to make the PCB. The board is 2 layers.
 
-html - This is a copy of the PSN-ADC-SERIAL files on my web site https://www.seismicnet.com
+hexfile - Firmware version 2.6 hex file and DspBoot.exe firmware flash utility.
+
+html - This is a copy of the PSN-ADC-SERIAL files on my web site https://www.seismicnet.com.
 
 schematic - Schematics of the board.
 
 src - Firmware source code files.
 
-Please do not contact me directly regarding building this board. For support please use the PSNList Google group at https://groups.google.com/g/psnlist
+Please do not contact me directly regarding building this board. For support please use the PSNList Google group at https://groups.google.com/g/psnlist.
 
 Thanks,
 Larry Cochrane
